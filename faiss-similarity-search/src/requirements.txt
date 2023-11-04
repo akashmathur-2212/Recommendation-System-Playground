@@ -1,0 +1,6 @@
+faiss-gpu
+faiss-cpu
+boto3
+numpy
+pandas
+sentence_transformers
