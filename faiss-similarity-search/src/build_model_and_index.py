@@ -25,7 +25,7 @@ def create_index(data, text_column, model):
     return index
 
 if __name__=="__main__":
-    df_news = pd.read_csv("../input/news-summary/news_summary_more.csv")
+    df_news = pd.read_csv("../input/news-summary/news_summary_more.csv") 
 
     torch_device = 'cuda' if torch.cuda.is_available() else 'cpu'
     model = SentenceTransformer("all-MiniLM-L6-v2", device=torch_device)
