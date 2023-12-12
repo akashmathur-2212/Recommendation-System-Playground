@@ -18,7 +18,7 @@ def lambda_handler(event, context):
     
     try:
         # Parse the JSON input from the API Gateway
-        request_body = json.loads(event['body'])  
+        request_body = json.loads(event['body']) 
         
         # Retrieve the user query and top K from the JSON input
         user_query = request_body.get('query', '')
